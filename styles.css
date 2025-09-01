@@ -1,0 +1,149 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Global Styles */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    /* height:100vh; */
+    background:linear-gradient( #000000 50%, #ffb92a 50%);
+
+}
+.container{
+    background:#201f28;
+    font-size: 16px;
+    width:90vw;
+    padding: 2em 1.8em;
+    border-radius: 0.6em;
+    box-shadow: 1.2em 2em 3em rgba(0,0,0,0.2);
+    margin:50px auto;
+}
+.search-container{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap:1.5em
+}
+.search-container input,
+.search-container button{
+    font-size:0.9em;
+    outline:none;
+    border-radius: 0.3em;
+}
+.search-container input{
+    padding:0.6em;
+    color:#ffffff;
+    background:transparent;
+    border:1px solid #a0a0a0;
+}
+.search-container input:focus{
+    border-color: #ffffff;
+}
+.search-container button{
+    background-color: #ffb92a;
+    border:none;
+    cursor: pointer;
+    transition: background 0.5s ease;
+}
+.search-container button:hover{
+    background:#a06d06;
+    color:#fff;
+}
+.info{
+    /* border:1px solid white; */
+    /* gap:4px; */
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    color:#ffffff;
+    cursor: pointer;
+    max-width: 300px;
+   
+}
+.poster{
+    max-width: inherit;
+    height:250px;
+    border:2px solid white;
+}
+.title {
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color:#a0a0a0
+}
+.rating{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 0.8rem;
+}
+.rating i{
+    color:#ffb92a
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    font-weight: 300;
+    font-size:0.95em ;
+    color:#a0a0a0;
+    margin: 0.6em 0;
+}
+.msg{
+    text-align: center;
+    color:#fff;
+    margin:1em 0 0 0;
+    font-weight: 600;
+}
+.genre{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin: 15px auto;
+}
+.genre div{
+    padding:5px 15px;
+    border: 1px solid #a0a0a0;
+    border-radius: 5px;
+    font-size: 0.8em;
+    cursor: pointer;
+    text-transform: capitalize;
+    
+}
+.genre div:hover{
+    background-color: #ffb92a;
+    color:black;
+    border:none;
+    transform: all 1s ease-in;
+}
+#result{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin:20px 0;
+    gap:20px;
+}
+.info-details h2{
+    font-size: 1em;
+    color:#ddd;
+    margin:10px 0 5px 0;
+}
+.info-details p{
+    font-size: 0.8em;
+    color:#aaa;
+}
+@media (max-width: 768px) {
+    .info{
+        grid-template-columns: 1fr;
+        overflow: hidden;
+    }
+}
