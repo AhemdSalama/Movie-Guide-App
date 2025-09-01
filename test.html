@@ -3,25 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cardtle>
+    <title>Movie Card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 <body>
     <div class="card">
-        <div class="card-img">
-            <img src="" alt="">
-        </div>
+        <div class="card-img"></div>
         <div class="card-info">
-            <div class="title">
-                <h2>Interstellar</h2>
-                <p>PG-12 / 2h 49min / Adventure ...</p>
+            <div class="card-title">Interstellar</div>
+            <div class="card-meta">PG-13 / 2h 49min / Adventure, Drama, Sci-Fi</div>
+            <div class="card-stats">
+                <span><i class="fa fa-eye"></i>124</span>
+                <span><i class="fa fa-heart"></i>3</span>
             </div>
-            <div class="summary">
-                <h2>summary</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias pariatur eveniet nesciunt accusantium odit culpa tempora earum quaerat deserunt libero dignissimos suscipit voluptatibus temporibus, sed repellat aut id eius est.</p>
-                <p class="actors">Lorem ipsum dolor sit amet.</p>
+            <div class="card-summary">
+                <h3>SUMMARY</h3>
+                <p>A group of elderly people are giving interviews about having lived in a climate of crop blight and constant dust...</p>
             </div>
-            
-
+            <div class="card-actors">
+                Matthew McConaughey, Anne Hathaway, Jessica Chastain
+            </div>
+            <div class="card-actions">
+                <a href="#" class="watch-trailer"><i class="fa fa-play"></i>WATCH TRAILER</a>
+                <button title="Add to favorites"><i class="fa fa-bookmark"></i></button>
+                <button title="Share"><i class="fa fa-share-alt"></i></button>
+            </div>
         </div>
     </div>
 </body>
