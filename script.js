@@ -16,7 +16,7 @@ movieNameRef.addEventListener('keyup',(e)=>{
 
 let getMovie = ()=>{
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?s=${movieName}&apikey=${key}`;
+    let url = `https://www.omdbapi.com/?s=${movieName}&apikey=${key}`;
 
     // if the input field is empty
     if (movieName.length <=0){
