@@ -18,7 +18,13 @@
         .card-img {
             position: relative;
             height: 220px;
-            background: url('19.jpg') center/cover no-repeat;
+            overflow: hidden;
+            /* background: url('19.jpg') center/cover no-repeat; */
+        }
+        .card-img img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
         }
         .card-img::after {
             content: "";
@@ -33,29 +39,32 @@
             font-size: 2em;
             font-weight: 600;
             margin-bottom: 0.2em;
+            font-family: 'Poppins';
+            margin-left: -1px;
         }
         .card-meta {
-            font-size: 0.95em;
-            color: #ffb92a;
+            font-size: 0.75em;
+            color: #a0a0a0;
             margin-bottom: 1em;
+            margin-top: -7px;
         }
         .card-summary {
             margin-bottom: 1em;
         }
         .card-summary h3 {
-            font-size: 1em;
-            color: #ffb92a;
+            font-size: 0.95em;
+            color: #ccc;
             margin-bottom: 0.3em;
             letter-spacing: 1px;
         }
         .card-summary p {
-            font-size: 0.95em;
-            color: #eee;
+            font-size: 0.8em;
+            color: #a0a0a0;
             margin-bottom: 0.5em;
         }
         .card-actors {
-            font-size: 0.9em;
-            color: #ccc;
+            font-size: 0.8em;
+            color: #a0a0a0;
             font-style: italic;
             margin-bottom: 1em;
         }
@@ -80,7 +89,7 @@
             background: none;
             border: none;
             color: #ff4c4c;
-            font-size: 1.1em;
+            font-size: 0.8em;
             cursor: pointer;
             padding: 0.5em 1em;
             border-radius: 6px;

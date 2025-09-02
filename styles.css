@@ -127,9 +127,12 @@ body{
     transform: all 1s ease-in;
 }
 #result{
-    display: grid;
-    grid-template-columns: repeat(7,1fr);
-    margin:20px 0;
+    /* display: grid;
+    grid-template-columns: repeat(4,1fr); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:40px 0;
     gap:20px;
 }
 .info-details h2{
